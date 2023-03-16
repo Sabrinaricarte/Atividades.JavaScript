@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+
+        var peso = Number(window.prompt("Digite seu peso em kg: "));
+        var altura = Number(window.prompt("Digite sua altura em metros: "));
+
+        var imc = peso / (altura ** 2);
+        var condicao;
+
+        if (imc < 18.5) {
+          condicao = "Abaixo do peso";
+        } else if  (imc < 25) {
+          condicao = "Peso normal";
+        } else if  (imc >= 30) {
+          condicao = "Obeso";
+        } else {
+          condicao = "Acima do peso";
+        }
+
+         alert("Seu IMC é: "+imc);
+         alert("Sua condição de peso é: "+ condicao);  
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura/Sexo</title>
+</head>
+<body>
+    <script>
+
+        var altura = parseFloat(prompt("Digite sua altura em metros: "));
+        var sexo = prompt("Digite seu sexo (M para masculino, F para feminino): ");
+
+        if (sexo == "M") {
+          var peso_ideal = (72.7 * altura) - 58;
+          alert("Seu peso ideal é: " + peso_ideal.toFixed(2) + " kg");
+        } else if (sexo == "F") {
+          var peso_ideal = (62.1 * altura) - 44.7;
+          alert("Seu peso ideal é: " + peso_ideal.toFixed(2) + " kg");
+        } else {
+          alert("Sexo inválido. Por favor, digite M ou F.");
+        } 
+
+    </script>
+</body>
+</html>
